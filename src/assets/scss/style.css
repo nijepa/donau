@@ -1,0 +1,91 @@
+body {
+  margin-top: 105px; }
+  
+  
+.navbar {
+  box-shadow: 2px 2px 5px #05618d;
+  opacity: 0.9;
+  background: #fff;
+  transition: all .8s ease-in-out; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem; }
+  .navbar .nav-link:hover {
+    animation: .3s btn forwards; }
+
+.dropdown-item:hover {
+  animation: .3s drop forwards; }
+
+#showcase {
+  position: relative;
+  background: url(../img/mountains.jpg);
+  min-height: 600px; }
+  #showcase .primary-overlay {
+    background: #05618d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
+  #home-heading {
+    position: relative;
+    min-height: 200px;
+    background: url('../img/lights.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+  
+
+#authors img {
+  margin-top: -50px; }
+#authors .card:hover {
+  background: #05618d;
+  color: #fff; }
+#authors .fab {
+  color: #fff; }
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 4rem; }
+
+  .mb-resp {
+    margin-bottom: 1rem; } }
+@keyframes load {
+  0% {
+    transform: translateY(0px) scaleY(0.3) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scaleY(1) rotate(0deg); } }
+@keyframes btn {
+  0% {
+    transform: translateX(10px) scale(1.3) rotate(10deg); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1) rotate(0deg); } }
+@keyframes drop {
+  0% {
+    transform: scale(1.3); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */
